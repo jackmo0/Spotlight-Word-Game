@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotlight Word Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+     <div class="game-container">
+        <h1>🔦 Spotlight Word Game</h1>
+        
+        <div class="game-info">
+            <div>Score: <span id="score">0</span></div>
+            <div>Round: <span id="round">1</span></div>
+            <div>Lives: <span id="lives">❤️❤️❤️</span></div>
+            <div>Hints: <span id="hints">💡💡💡</span></div>
+        </div>
+
+        <div class="category" id="category">Animals</div>
+
+        <div class="spotlight-area" id="spotlightArea">
+            <div class="spotlight moving" id="spotlight"></div>
+            <div class="word-display" id="wordDisplay"></div>
+        </div>
+
+        <div class="input-section">
+            <input type="text" class="guess-input" id="guessInput" placeholder="Your guess" maxlength="20">
+            <button class="guess-btn" id="guessBtn">Guess</button>
+        </div>
+
+        <button class="hint-btn" id="hintBtn">💡 Reveal Letter</button>
+
+        <div class="message" id="message"></div>
+
+        <button class="new-game-btn" id="newGameBtn">🎮 New Game</button>
+    </div>
+      <script src="script.js"></script>
+  </body>
+</html>
